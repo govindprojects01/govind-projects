@@ -4,144 +4,127 @@
 <meta charset="UTF-8">
 <title>Our Services | Govind Projects</title>
 <link rel="stylesheet" href="style.css">
-
-<style>
-/* Extra services page styling */
-.services-section{
-  max-width:1100px;
-  margin:50px auto;
-  padding:40px;
-  background:#ffffff;
-  border-radius:12px;
-}
-.services-section h1{
-  text-align:center;
-  color:#0b78c1;
-  margin-bottom:10px;
-}
-.services-section p{
-  text-align:center;
-  color:#555;
-  margin-bottom:40px;
-  font-size:18px;
-}
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-.service-card{
-  background:#f4f6f8;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-.service-card:hover{
-  transform:translateY(-6px);
-}
-.service-card h3{
-  color:#0b78c1;
-  margin-bottom:10px;
-}
-.service-card p{
-  color:#333;
-  font-size:15px;
-  line-height:1.6;
-}
-</style>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <div class="logo">Govind Projects</div>
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
-
-<!-- FLOATING BUTTONS -->
-<a href="https://wa.me/919559628719" class="whatsapp">WhatsApp</a>
-<a href="tel:9559628719" class="call">Call</a>
-
-<!-- SERVICES SECTION -->
 <section class="services-section">
-  <h1>Our Services</h1>
-  <p>Complete academic project solutions with quality, accuracy and on-time delivery</p>
+  <h2>Our Services</h2>
+  <p class="subtitle">
+    Complete academic project solutions with quality, accuracy and on-time delivery
+  </p>
 
   <div class="services-grid">
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('MBA Projects & Reports')">
       <h3>📘 MBA Projects & Reports</h3>
-      <p>Final year MBA projects, synopsis, reports, PPT and viva support.</p>
+      <p>Final year MBA projects, synopsis, PPT & viva</p>
+      <span>✔ 150+ Projects Completed</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('B.Tech / B.E Projects')">
       <h3>💻 B.Tech / B.E Projects</h3>
-      <p>Final year engineering projects with documentation and guidance.</p>
+      <p>Engineering projects with full documentation</p>
+      <span>✔ 200+ Projects Delivered</span>
     </div>
 
-    <div class="service-card">
-      <h3>🏫 Diploma / Polytechnic Projects</h3>
-      <p>Technical diploma projects with proper explanations.</p>
+    <div class="service-card" onclick="openForm('Diploma / Polytechnic Projects')">
+      <h3>🏭 Diploma / Polytechnic</h3>
+      <p>Technical diploma projects with explanation</p>
+      <span>✔ 120+ Students Helped</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('M.Sc / B.Sc Projects')">
       <h3>🔬 M.Sc / B.Sc Projects</h3>
-      <p>Physics, Chemistry, Mathematics and science-based projects.</p>
+      <p>Science-based academic projects</p>
+      <span>✔ 90+ Projects Done</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('BCA / MCA Projects')">
       <h3>🖥 BCA / MCA Projects</h3>
-      <p>Computer science projects with reports and coding guidance.</p>
+      <p>Computer projects with coding & reports</p>
+      <span>✔ 180+ Projects Completed</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('Assignments (All Subjects)')">
       <h3>📝 Assignments (All Subjects)</h3>
-      <p>Well-structured, plagiarism-free assignments.</p>
+      <p>Plagiarism-free assignments</p>
+      <span>✔ 500+ Assignments Submitted</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('PPT & Presentations')">
       <h3>📊 PPT & Presentations</h3>
-      <p>Professional PowerPoint presentations for projects & seminars.</p>
+      <p>Professional PowerPoint slides</p>
+      <span>✔ 300+ PPTs Designed</span>
     </div>
 
-    <div class="service-card">
-      <h3>📄 Synopsis & Proposal Writing</h3>
-      <p>Project synopsis and research proposals as per university format.</p>
+    <div class="service-card" onclick="openForm('Synopsis & Proposal Writing')">
+      <h3>📄 Synopsis & Proposal</h3>
+      <p>University format proposals</p>
+      <span>✔ 250+ Approved</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('Research Papers')">
       <h3>📚 Research Papers</h3>
-      <p>Review papers, journals and research documentation.</p>
+      <p>Journals, review & research papers</p>
+      <span>✔ 100+ Papers Published</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('Thesis & Dissertation')">
       <h3>📖 Thesis & Dissertation</h3>
-      <p>Complete dissertation writing with proper referencing.</p>
+      <p>Complete dissertation writing</p>
+      <span>✔ 80+ Completed</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('Plagiarism-Free Content')">
       <h3>✅ Plagiarism-Free Content</h3>
-      <p>100% original content with plagiarism checking.</p>
+      <p>100% original content with report</p>
+      <span>✔ Turnitin Checked</span>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openForm('Viva & Project Guidance')">
       <h3>🎓 Viva & Project Guidance</h3>
-      <p>Complete guidance from topic selection to final viva.</p>
+      <p>From topic to final viva</p>
+      <span>✔ Full Support</span>
     </div>
 
   </div>
 </section>
 
-<footer>
-© 2026 Govind Projects | All Rights Reserved
-</footer>
+<!-- ================= POPUP FORM ================= -->
+<div id="formModal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeForm()">×</span>
+
+    <h3 id="formTitle">Project Enquiry</h3>
+
+    <form action="https://wa.me/919559628719" method="get" enctype="multipart/form-data" target="_blank">
+
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="tel" name="phone" placeholder="Mobile Number" required>
+      <input type="email" name="email" placeholder="Email Address">
+
+      <input type="text" id="serviceInput" name="service" readonly>
+
+      <textarea name="message" placeholder="Project / Assignment Requirements"></textarea>
+
+      <label>Upload College Format (PDF / JPG)</label>
+      <input type="file" accept=".pdf,.jpg,.jpeg">
+
+      <button type="submit">Submit via WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function openForm(service){
+  document.getElementById("formModal").style.display="flex";
+  document.getElementById("formTitle").innerText = service + " Enquiry";
+  document.getElementById("serviceInput").value = service;
+}
+function closeForm(){
+  document.getElementById("formModal").style.display="none";
+}
+</script>
 
 </body>
 </html>
